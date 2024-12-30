@@ -1,0 +1,20 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Backen orito",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fltter",
+    "delivery",
+    "nodejs"
+  ],
+  "author": "Jerson Erazo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "http": "^0.0.1-security"
+  }
+}
