@@ -7,6 +7,6 @@ const port = process.env.PORT || 3000;
 
 app.set('port', port);
 
-server.listen(3000, '192.168.18.9' || 'localhost', function(){
+server.listen(3000, '174.142.60.54' || 'localhost', function(){
     console.log('Server listening on port ' + server.address().port + 'imiciado');
 });
