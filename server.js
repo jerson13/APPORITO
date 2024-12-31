@@ -19,10 +19,9 @@ app.disable('x-powered-by');
 
 app.set('port', port);
 
-server.listen(3000, '192.168.18.9' || 'localhost', function(){
-    console.log('Server listening on port ' + server.address().port + 'imiciado');
+server.listen(port, '0.0.0.0', function() {
+    console.log('Server listening on port ' + port + ' iniciado');
 });
-
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
