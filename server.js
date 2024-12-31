@@ -25,6 +25,9 @@ server.listen(port, '0.0.0.0', function() {
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
+app.get('/test', (req, res) => {
+    res.send('ruta del test!');
+});
 
 //error
 
