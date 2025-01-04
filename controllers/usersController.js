@@ -3,7 +3,7 @@ const User = require('../models/user');
 module.exports = {
     async getAll(req, res, next) { 
         try {
-            const data = await User.getAll();
+            const data = await user.getAll();
             console.log(`Usuarios: ${data}`);
             return res.status(200).json(data);
         }
