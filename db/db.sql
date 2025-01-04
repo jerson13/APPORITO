@@ -1,0 +1,17 @@
+CREATE TABLE `innovate_delivery`.`users` (
+  `id` INT NOT NULL,
+  `email` VARCHAR(255) NOT NULL,
+  `name` VARCHAR(255) NOT NULL,
+  `lastname` VARCHAR(255) NOT NULL,
+  `phone` VARCHAR(45) NOT NULL,
+  `image` VARCHAR(255) NULL,
+  `is_available` BOOLEAN NULL,
+  `seccion_token` VARCHAR(255) NULL,
+  `password` VARCHAR(255) NOT NULL,
+  `created_as` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `update_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC),
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC),
+  UNIQUE INDEX `phone_UNIQUE` (`phone` ASC)
+);
