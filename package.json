@@ -14,10 +14,12 @@
   "author": "Jerson Erazo",
   "license": "MIT",
   "dependencies": {
+    "bluebird": "^3.7.2",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "http": "^0.0.1-security",
     "morgan": "^1.10.0",
-    "mysql2": "^3.12.0"
+    "mysql2": "^3.12.0",
+    "pg-promise": "^11.10.2"
   }
 }
