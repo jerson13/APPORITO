@@ -15,7 +15,7 @@ types.setTypeParser(1114, function(stringValue) {
 });
 
 const databaseConfig = pgp({
-    'host': 'http://wwww.autorack.proxy.rlwy.net',
+    'host': 'autorack.proxy.rlwy.net',
     'port': 27199,
     'database': 'railway',
     'user': 'postgres',
