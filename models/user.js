@@ -1,8 +1,8 @@
 const db = require('../config/config');
 
-const user = {};
+const User = {};
 
-user.getAll = () => {
+User.getAll = () => {
     const sql = `
         SELECT * FROM users
     `;
@@ -11,4 +11,4 @@ user.getAll = () => {
     return db.manyOrNone(sql);
 };
 
-module.exports = user;
+module.exports = User;
