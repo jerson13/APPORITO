@@ -20,12 +20,3 @@ module.exports = {
    
 };
 
-(async function testConnection() {
-    try {
-        const data = await User.getAll(); // Asume que `getAll` realiza una consulta SELECT
-        console.log('Conexión exitosa. Datos obtenidos:', data);
-        
-    } catch (error) {
-        console.error('Error al conectar a la base de datos o ejecutar la consulta:', error.message);
-    }
-})();

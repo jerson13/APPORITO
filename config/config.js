@@ -21,16 +21,7 @@ const databaseConfig = pgp({
     'user': 'postgres',
     'password':'ETyPrNwxYHQqsxHzvZayFhkuRcxgMYvd'
 });
-// Verificar conexión
-databaseConfig
-    .connect()
-    .then((obj) => {
-        obj.done(); // Liberar conexión
-        console.log('Conexión exitosa a la base de datos.');
-    })
-    .catch((error) => {
-        console.error('Error al conectar a la base de datos:', error.message || error);
-    });
+
 const db = pgp(databaseConfig);
 
 module.exports = db;
